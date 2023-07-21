@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Open+Sans:wght@600&family=Roboto:wght@800&family=Roboto:wght@700&family=Roboto:wght@600&family=Roboto:wght@500&family=Roboto:wght@400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="side-menu theme">
+        <div class="avatar">
+            <div class="img"></div>
+        </div>
+        <div class="fullname">
+            <p class="firstName">
+                NGHIEM
+            </p>
+            <p class="lastName">
+                NGUYEN
+            </p>
+            <div class="position">
+                <div class="web">Web &nbsp;</div>
+                <div class="developer">Developer</div>
+            </div>
+        </div>
+        <div class="menuItems">
+            <div class="item" id="home">
+                <i class="fa-solid fa-house"></i>
+                <div class="text">
+                    <p class="title textSelected">Home</p>
+                    <div class="textBorder selected"></div>
+                </div>
+            </div>
+            <div class="item" id="about">
+                <i class="fa-solid fa-user"></i>
+                <div class="text">
+                    <p class="title">About Me</p>
+                    <div class="textBorder"></div>
+                </div>
+            </div>
+            <div class="item" id="work">
+                <i class="fa-solid fa-briefcase"></i>
+                <div class="text">
+                    <p class="title">Experience</p>
+                    <div class="textBorder"></div>
+                </div>
+            </div>
+            <div class="item" id="project">
+                <i class="fa-solid fa-bars-progress"></i>
+                <div class="text">
+                    <p class="title">Projects</p>
+                    <div class="textBorder"></div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="text">
+                    <p class="title">Contact</p>
+                    <div class="textBorder"></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                © Copyright 2023
+            </p>
+            <p>
+                Designed By <span>Nghiem Nguyen</span>
+            </p>
+        </div>
+    </div>
+    <section class="home">
+        <div class="content theme">
+            <div class="social">
+                <div class="row">
+                    <div class="col-2 facebook">
+                        <a href="https://www.facebook.com/nghiem.nguyen.77398143" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="col-2 tiktok">
+                        <a href="https://www.tiktok.com/@nbachnghiem" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a> 
+                    </div>
+                    <div class="col-2 instagram">
+                        <a href="https://www.instagram.com/nbachnghiem1997" target="_blank">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a> 
+                    </div> 
+                    <div class="col-2 instagram">
+                        <a href="https://www.youtube.com/channel/UC3o4B37m2ri3iLMgt3wLPHA" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a> 
+                    </div>
+                    <div class="col-2 linkedin">
+                        <a href="https://www.linkedin.com/in/nghiem-nguyen-584144167/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div class="switchToggle">
+                <p>Dark Mode</p>
+              <input type="checkbox" name="switchButton" class="switchButton" id="switchButton">
+              <label for="switchButton"></label>
+            </div>
+            <div class="backGroundText">
+                <p>
+                    Hi, My name is
+                </p>
+                <p>
+                    Nguyen Ngu Bach Nghiem.
+                </p>
+                <div class="textWriter">
+                    <p class="textTyping typing">
+                        i'm a <span>Web Developer!</span> 
+                    </p>
+                </div>
+                <div class="btn-group">
+                    <button class="download" id="download">Download CV</button>
+                    <button class="hire">Hire Me</button>
+                </div>
+            </div>
+            <div class="background theme">
+                <div class="homeBackground">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutMe theme">
+        <div class="content">
+            <div class="aboutBackground">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="aboutText aboutAnimation">
+                            <p class="mainTitle">
+                                Know Something
+                            </p>
+                            <p class="mainSubTitle">
+                                About Me
+                            </p>
+                        </div>
+                        <p class="contentText">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <div class="info">
+                            <div class="itemInfo">
+                                <div class="infoIcon">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                </div>
+                                <p class="infoText">10-10-1997</p>
+                            </div>
+                            <div class="itemInfo">
+                                <div class="infoIcon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <p class="infoText">nbachnghiem@gmail.com</p>
+                            </div>
+                            <div class="itemInfo">
+                                <div class="infoIcon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <p class="infoText">+84 983 110 748</p>
+                            </div>
+                            <div class="itemInfo">
+                                <div class="infoIcon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <p class="infoText">District 10, Ho Chi Minh City</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySkillsText">
+                <p class="titleMySkills">
+                    My Skills
+                </p>
+            </div>
+            <div class="mySkillsChart">
+                <div class="row">
+                    <div class="col-6 myskillChartContent skillChartContentHtml">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="-52.5 0 361 361" preserveAspectRatio="xMinYMin meet">
+                                <path d="M255.555 70.766l-23.241 260.36-104.47 28.962-104.182-28.922L.445 70.766h255.11z" fill="#E44D26"/>
+                                <path d="M128 337.95l84.417-23.403 19.86-222.49H128V337.95z" fill="#F16529"/>
+                                <path class="pathTransparent" d="M82.82 155.932H128v-31.937H47.917l.764 8.568 7.85 88.01H128v-31.937H85.739l-2.919-32.784zM90.018 236.542h-32.06l4.474 50.146 65.421 18.16.147-.04V271.58l-.14.037-35.568-9.604-2.274-25.471z" fill="#EBEBEB"/>
+                                <path d="M24.18 0h16.23v16.035h14.847V0h16.231v48.558h-16.23v-16.26H40.411v16.26h-16.23V0zM92.83 16.103H78.544V0h44.814v16.103h-14.295v32.455h-16.23V16.103h-.001zM130.47 0h16.923l10.41 17.062L168.203 0h16.93v48.558h-16.164V24.49l-11.166 17.265h-.28L146.35 24.49v24.068h-15.88V0zM193.21 0h16.235v32.508h22.824v16.05h-39.06V0z"/>
+                                <path class="pathTransparent" d="M127.89 220.573h39.327l-3.708 41.42-35.62 9.614v33.226l65.473-18.145.48-5.396 7.506-84.08.779-8.576H127.89v31.937zM127.89 155.854v.078h77.143l.64-7.178 1.456-16.191.763-8.568H127.89v31.86z" fill="#FFF"/>
+                            </svg>
+                        </div>
+                        <div class="skillItem">
+                            <p class="myskillChartProgress">
+                                HTML/CSS
+                            </p>
+                            <div class="progressBar">
+                                <div class="progressBarFill html"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 myskillChartContent skillChartContentCSharp">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" >
+                                <path d="M 25 2 C 24.285156 2 23.570313 2.179688 22.933594 2.539063 L 6.089844 12.003906 C 4.800781 12.726563 4 14.082031 4 15.535156 L 4 34.464844 C 4 35.917969 4.800781 37.273438 6.089844 37.996094 L 22.933594 47.460938 C 23.570313 47.820313 24.285156 48 25 48 C 25.714844 48 26.429688 47.820313 27.066406 47.460938 L 43.910156 38 C 45.199219 37.273438 46 35.917969 46 34.464844 L 46 15.535156 C 46 14.082031 45.199219 12.726563 43.910156 12.003906 L 27.066406 2.539063 C 26.429688 2.179688 25.714844 2 25 2 Z M 25 13 C 28.78125 13 32.277344 14.753906 34.542969 17.738281 L 30.160156 20.277344 C 28.84375 18.835938 26.972656 18 25 18 C 21.140625 18 18 21.140625 18 25 C 18 28.859375 21.140625 32 25 32 C 26.972656 32 28.84375 31.164063 30.160156 29.722656 L 34.542969 32.261719 C 32.277344 35.246094 28.78125 37 25 37 C 18.382813 37 13 31.617188 13 25 C 13 18.382813 18.382813 13 25 13 Z M 35 20 L 37 20 L 37 22 L 39 22 L 39 20 L 41 20 L 41 22 L 43 22 L 43 24 L 41 24 L 41 26 L 43 26 L 43 28 L 41 28 L 41 30 L 39 30 L 39 28 L 37 28 L 37 30 L 35 30 L 35 28 L 33 28 L 33 26 L 35 26 L 35 24 L 33 24 L 33 22 L 35 22 Z M 37 24 L 37 26 L 39 26 L 39 24 Z"/></svg>
+                        </div>
+                        <div class="skillItem">
+                            <p class="myskillChartProgress">
+                                C-Sharp
+                            </p>
+                            <div class="progressBar">
+                                <div class="progressBarFill cSharp"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 myskillChartContent skillChartContentVisualBasic">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                <path d="M3682 5100 c-105 -22 -93 -10 -998 -1011 -472 -522 -862 -949 -866 -949 -6 0 -847 686 -1028 838 -87 74 -139 96 -204 89 -46 -5 -364 -130 -474 -186 -45 -23 -83 -68 -101 -120 -16 -48 -16 -2354 0 -2402 18 -54 56 -97 107 -123 26 -13 130 -59 232 -102 265 -111 299 -111 435 3 187 158 1027 843 1034 843 4 0 394 -428 866 -951 819 -905 863 -952 923 -981 84 -42 178 -43 267 -5 128 54 1080 518 1116 543 48 33 95 102 114 168 23 75 23 3537 0 3612 -19 66 -66 135 -113 168 -36 25 -995 492 -1113 541 -66 28 -138 37 -197 25z m156 -3080 l-3 -539 -657 537 c-361 295 -657 539 -657 542 0 3 296 247 657 542 l657 537 3 -539 c1 -297 1 -783 0 -1080z m-2543 540 c0 -4 -147 -170 -327 -369 l-328 -362 0 731 0 731 328 -362 c180 -199 327 -365 327 -369z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="skillItem">
+                            <p class="myskillChartProgress">
+                                Visual Basic
+                            </p>
+                            <div class="progressBar">
+                                <div class="progressBarFill visualBasic"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 myskillChartContent skillChartContentJavascript">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">    
+                                <path d="M45.274,2.325C45.084,2.118,44.817,2,44.536,2H5.464C5.183,2,4.916,2.118,4.726,2.325S4.443,2.81,4.468,3.089l3.52,39.427 c0.037,0.412,0.324,0.759,0.722,0.873l16.01,4.573C24.809,47.987,24.902,48,24.994,48s0.185-0.013,0.274-0.038l16.024-4.573 c0.398-0.114,0.685-0.461,0.722-0.873l3.518-39.427C45.557,2.81,45.463,2.532,45.274,2.325z M12,29.004l7,1.942V11h4v26l-11-3.051 V29.004z M38.054,22L37,34.25L27,37v-4.601l6.75-1.855l0.25-3.75L27,28V11h12l-0.345,4H31v8L38.054,22z"/></svg>
+                        </div>
+                        <div class="skillItem">
+                            <p class="myskillChartProgress">
+                                Javascript
+                            </p>
+                            <div class="progressBar">
+                                <div class="progressBarFill javascript"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 myskillChartContent skillChartContentDatabase">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <g>
+                                <path d="M451.5,338.6c5.4-7.8,8.1-7.4,8.1,1.2V398c0,28.7-20.2,54.9-60.5,78.5S311.1,512,256,512c-54.3,0-101.8-11.8-142.5-35.5   S52.4,426.7,52.4,398v-58.2c0-3.1,0.8-5,2.3-5.8c1.6-0.8,3.5,0.8,5.8,4.7c12.4,20.2,36.7,36.8,72.7,50   c36.1,13.2,77,19.8,122.8,19.8s86.7-6.6,122.8-19.8C414.8,375.5,439.1,358.8,451.5,338.6 M452.7,190.8c3.1-6.2,5.4-6.2,7,0v67.5   c0,26.4-19.8,48.5-59.3,66.3s-87.7,26.8-144.3,26.8c-55.9,0-103.8-8.9-143.7-26.8s-59.9-40-59.9-66.3v-67.5c0-7.8,2.7-7.8,8.1,0   c11.6,17.8,35.7,32.4,72.1,43.6c36.5,11.2,77.6,16.9,123.3,16.9s86.9-5.6,123.3-16.9C415.8,223.2,440.2,208.7,452.7,190.8 M256,0   c55.9,0,103.8,7.6,143.7,22.7s59.9,33.2,59.9,54.1V114c0,22.5-20,41.7-59.9,57.6s-87.9,23.9-143.7,23.9s-103.8-8-143.7-23.9   S52.4,136.5,52.4,114V76.8c0-20.9,20-39,59.9-54.1S200.1,0,256,0"/>
+                            </g>
+                            </svg>
+                        </div>
+                        <div class="skillItem">
+                            <p class="myskillChartProgress">
+                                Oracle Database
+                            </p>
+                            <div class="progressBar">
+                                <div class="progressBarFill database"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 myskillChartContent skillChartContentOffice">
+                        <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">    
+                            <path d="M44.257,5.333l-12.412-3.3c-0.192-0.051-0.396-0.044-0.582,0.021l-25.588,8.8C5.271,10.993,5,11.373,5,11.8V36v1.2v1.065 v0.01c0,0.363,0.286,0.737,0.675,0.871l25.588,8.8C31.368,47.981,31.478,48,31.588,48c0.086,0,0.173-0.011,0.257-0.033l12.412-3.3 C44.695,44.55,45,44.153,45,43.7V6.3C45,5.847,44.695,5.45,44.257,5.333z M30,10.827v29.532L8.153,37.476l7.191-2.637 C15.738,34.695,16,34.32,16,33.9V13.715L30,10.827z"/></svg>
+                        </div>
+                        <div class="skillItem">
+                            <p class="myskillChartProgress">
+                                MS Office
+                            </p>
+                            <div class="progressBar">
+                                <div class="progressBarFill office"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySkillsText">
+                <p class="titleMySkills">
+                    Abilities
+                </p>
+            </div>
+            <div class="skills">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 skillContent">
+                        <div class="checker">
+                            <div class="marker"></div>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p class="skillText">
+                            Individually Work & Teamwork
+                        </p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 skillContent">
+                        <div class="checker">
+                            <div class="marker"></div>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p class="skillText">
+                            Working Under Pressure
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 skillContent">
+                        <div class="checker">
+                            <div class="marker"></div>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p class="skillText">
+                            Design Skills & Development
+                        </p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 skillContent">
+                        <div class="checker">
+                            <div class="marker"></div>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p class="skillText">
+                            Self-study Research
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 skillContent">
+                        <div class="checker">
+                            <div class="marker"></div>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p class="skillText">
+                            Hard Working
+                        </p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 skillContent">
+                        <div class="checker">
+                            <div class="marker"></div>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p class="skillText">
+                            Teamwork
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="workExpAndEdu">
+        <div class="aboutText workAnimation">
+            <p class="mainTitle">
+                Know Something
+            </p>
+            <p class="mainSubTitle">
+                Work Experience & Education
+            </p>
+        </div>
+        <div class="timelineBackgroundLeft"></div>
+        <div class="timelineBackgroundRight"></div>
+        <div class="timeline">
+            <div class="timelineStraight">
+            </div>
+            <div class="timelineRoad">
+            </div>
+            <div class="timelineItems">
+                <div class="timelineLeft">
+                    <div class="yearContent">
+                        <p>JAN 2022 - SEP 2022</p>
+                    </div>
+                </div>
+                <div class="timelineCenter">
+                    <div class="node">
+                        <p><i class="fa-solid fa-certificate"></i></p>
+                    </div>
+                </div>
+                <div class="timelineRight">
+                    <div class="eduAndWorkContent isc">
+                        <p class="header">
+                            ISC Quang Trung
+                        </p>
+                        <p class="info">
+                            Java Certificate
+                        </p>
+                        <p class="para">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form.
+                        </p>
+                        <div class="moreInfo">
+                            <p>More Info</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timelineItems">
+                <div class="timelineLeft">
+                    <div class="eduAndWorkContent gdu">
+                        <p class="header">
+                            Gia Dinh University
+                        </p>
+                        <p class="info">
+                            Sofware Engineering (GPA 2.78)
+                        </p>
+                        <p class="para">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum".
+                        </p>
+                        <div class="moreInfo">
+                            <p>More Info</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timelineCenter">
+                    <div class="node">
+                        <p><i class="fa-solid fa-graduation-cap"></i></p>
+                    </div>
+                </div>
+                <div class="timelineRight">
+                    <div class="yearContent">
+                        <p>JAN 2022 - SEP 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timelineItems">
+                <div class="timelineLeft">
+                    <div class="yearContent">
+                        <p>JAN 2022 - SEP 2022</p>
+                    </div>
+                </div>
+                <div class="timelineCenter">
+                    <div class="node">
+                        <p><i class="fa-solid fa-briefcase"></i></p>
+                    </div>
+                </div>
+                <div class="timelineRight">
+                    <div class="eduAndWorkContent tmt">
+                        <p class="header">
+                            TMT Solutions
+                        </p>
+                        <p class="info">
+                            Web Developer
+                        </p>
+                        <p class="para">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form.
+                        </p>
+                        <div class="moreInfo">
+                            <p>More Info</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timelineItems">
+                <div class="timelineLeft">
+                    <div class="eduAndWorkContent tvc">
+                        <p class="header">
+                            Tinhvan Consulting 
+                        </p>
+                        <p class="info">
+                            Web Developer
+                        </p>
+                        <p class="para">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum".
+                        </p>
+                        <div class="moreInfo">
+                            <p>More Info</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timelineCenter">
+                    <div class="node">
+                        <p><i class="fa-solid fa-briefcase"></i></p>
+                    </div>
+                </div>
+                <div class="timelineRight">
+                    <div class="yearContent">
+                        <p>JAN 2022 - SEP 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutProject projectAnimation">
+            <p class="mainTitle">
+                Let's Explore 
+            </p>
+            <p class="mainSubTitle">
+                My Recent Projects
+            </p>
+        </div>
+        <div class="projectTab">
+            <nav>
+                <div class="nav nav-tabs row" id="nav-tab" role="tablist">
+                  <button class="nav-link active col-4" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Histaff Web App</button>
+                  <button class="nav-link col-4" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">HiStaff Portal App</button>
+                  <button class="nav-link col-4" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Core*</button>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="project">
+        <div class="projectContent">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" >
+                    <p>1. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum"</p>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide img1"></div>
+                          <div class="swiper-slide img2"></div>
+                          <div class="swiper-slide img3"></div>
+                          <div class="swiper-slide img4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" >2. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum"</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" >3. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum"</div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="backgroundTop"></div>
+        <div class="contactContent">
+            <div class="row ">
+                <div class="col-7 text">
+                    <p class="thank">
+                        THANK YOU!
+                    </p>
+                    <p class="contactText">
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum".
+                    </p>
+                </div>
+                <div class="col-5 form">
+                    <div class="formContent">
+                        <div class="blur">
+                        </div>
+                        <p class="title">Send me a Message</p>
+                        <div class="fullname">
+                            <input type="text" class="textBox" placeholder="Fullname"/>
+                        </div>
+                        <div class="email">
+                            <input type="text" class="textBox" placeholder="Email"/>
+                        </div>
+                        <div class="subject">
+                            <input type="text" class="textBox" placeholder="Subject"/>
+                        </div>
+                        <textarea id="message" class="message" placeholder="Message"></textarea>
+                        <div class="submitButton">
+                            <button id="send">Send<i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="social">
+                <div class="socialItem facebook">
+                    <a href="https://www.facebook.com/nghiem.nguyen.77398143" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="socialItem tiktok">
+                    <a href="https://www.tiktok.com/@nbachnghiem" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a> 
+                </div>
+                <div class="socialItem instagram">
+                    <a href="https://www.instagram.com/nbachnghiem1997" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a> 
+                </div> 
+                <div class="socialItem youtube">
+                    <a href="https://www.youtube.com/channel/UC3o4B37m2ri3iLMgt3wLPHA" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a> 
+                </div>
+                <div class="socialItem linkedin">
+                    <a href="https://www.linkedin.com/in/nghiem-nguyen-584144167/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a> 
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    © Copyright 2023
+                </p>
+                <p>
+                    Designed By <span>Nghiem Nguyen</span>
+                </p>
+            </div>
+        </div>
+        <div class="backgroundBottom"></div>
+        <div class="contactBackgroundBottom"></div>
+    </section>
+    <script>
+        const themeColorPurple = "#8237ff";
+        const themeColorPurple2Dark = "#c7bcff";
+        const themeColorPurple2Light = "#fbefed";
+        const backgroundColorLight = "#edf1fd";
+        const textColorLight = "#3e4158";
+        const backgroundColorDark = "#1d1d1d";
+        const textColorDark = "#edf1fd";
+        var timeouts = [];
+        var abouTimeouts = [];
+        var timelineTimeouts = [];
+        var lastPos = 0;
+        var isDarkMode = false;
+        var isClick = false;
+        var windowHeight = $(window).height();
+        var aboutMePos = { "from": $(".aboutText").offset().top - windowHeight, "to": $(".aboutText").offset().top + $(".aboutText").height() - windowHeight};
+        var workExpAndEduPos = { "from": $(".workExpAndEdu").offset().top, "to": $(".workExpAndEdu").offset().top + $(".workExpAndEdu").height() };
+        var projectPos = { "from": $(".aboutProject .mainTitle").offset().top, "to": $(".project").offset().top + $(".project").height() };
+        var skillsPos = { "from": $(".skills").offset().top - windowHeight, "to": $(".skills").offset().top + $(".skills").height() - windowHeight};
+        var downloadPos = { "from": $(".download").offset().top, "to": $(".download").offset().top + $(".download").height()};
+        var hirePos = { "from": $(".hire").offset().top, "to": $(".hire").offset().top + $(".hire").height()};
+        var skillChartContentCSharpPos = { "from": $(".skillChartContentCSharp").offset().top - windowHeight, "to": $(".skillChartContentCSharp").offset().top + $(".skillChartContentCSharp").height() - windowHeight};
+        var skillChartContentHtmlPos = { "from": $(".skillChartContentHtml").offset().top - windowHeight, "to": $(".skillChartContentHtml").offset().top + $(".skillChartContentHtml").height() - windowHeight};
+        var skillChartContentVisualBasicPos = { "from": $(".skillChartContentVisualBasic").offset().top - windowHeight, "to": $(".skillChartContentVisualBasic").offset().top + $(".skillChartContentVisualBasic").height() - windowHeight};
+        var skillChartContentJavascriptPos = { "from": $(".skillChartContentJavascript").offset().top - windowHeight, "to": $(".skillChartContentJavascript").offset().top + $(".skillChartContentJavascript").height() - windowHeight};
+        var skillChartContentDatabasePos = { "from": $(".skillChartContentDatabase").offset().top - windowHeight, "to": $(".skillChartContentDatabase").offset().top + $(".skillChartContentDatabase").height() - windowHeight};
+        var skillChartContentOfficePos = { "from": $(".skillChartContentOffice").offset().top - windowHeight, "to": $(".skillChartContentOffice").offset().top + $(".skillChartContentOffice").height() - windowHeight};
+        var itemInfoPos = [{ "from": $(".itemInfo").eq(0).offset().top - windowHeight, "to": $(".itemInfo").eq(0).offset().top + $(".itemInfo").eq(0).height() - windowHeight},
+                           { "from": $(".itemInfo").eq(1).offset().top - windowHeight, "to": $(".itemInfo").eq(1).offset().top + $(".itemInfo").eq(1).height() - windowHeight},
+                           { "from": $(".itemInfo").eq(2).offset().top - windowHeight, "to": $(".itemInfo").eq(2).offset().top + $(".itemInfo").eq(2).height() - windowHeight},
+                           { "from": $(".itemInfo").eq(3).offset().top - windowHeight, "to": $(".itemInfo").eq(3).offset().top + $(".itemInfo").eq(3).height() - windowHeight}];
+        var timelineCenterPos = { "from": $(".timelineCenter").offset().top  - windowHeight, "to": $(".timelineCenter").offset().top + $(".timelineCenter").height()  - windowHeight};
+        var contactPos = { "from": $(".contact").offset().top  - windowHeight, "to": $(".contact").offset().top + $(".contact").height()  - windowHeight};
+        var formContentPos = { "from": $(".formContent").offset().top - windowHeight + $(".formContent").height() / 2, "to": $(".formContent").offset().top + $(".formContent").height()  - windowHeight};
+        var workAnimationPos = { "from": $(".workAnimation").offset().top - windowHeight, "to": $(".workAnimation").offset().top + $(".workAnimation").height() - windowHeight};
+        var projectAnimationPos = { "from": $(".projectAnimation").offset().top - windowHeight, "to": $(".projectAnimation").offset().top + $(".projectAnimation").height() - windowHeight};
+        $(document).ready(function() {
+            runAllAnimation();
+            $(window).on('resize', function(){
+                windowHeight = $(this).height();
+                aboutMePos = { "from": $(".aboutText").offset().top - windowHeight, "to": $(".aboutText").offset().top + $(".aboutText").height() - windowHeight};
+                skillsPos = { "from": $(".skills").offset().top - windowHeight, "to": $(".skills").offset().top + $(".skills").height() - windowHeight};
+                workExpAndEduPos = { "from": $(".workExpAndEdu").offset().top, "to": $(".workExpAndEdu").offset().top + $(".workExpAndEdu").height()};
+                projectPos = { "from": $(".aboutProject .mainTitle").offset().top, "to": $(".project").offset().top + $(".project").height() };
+                itemInfoPos = [{ "from": $(".itemInfo").eq(0).offset().top - windowHeight, "to": $(".itemInfo").eq(0).offset().top + $(".itemInfo").eq(0).height() - windowHeight},
+                               { "from": $(".itemInfo").eq(1).offset().top - windowHeight, "to": $(".itemInfo").eq(1).offset().top + $(".itemInfo").eq(1).height() - windowHeight},
+                               { "from": $(".itemInfo").eq(2).offset().top - windowHeight, "to": $(".itemInfo").eq(2).offset().top + $(".itemInfo").eq(2).height() - windowHeight},
+                               { "from": $(".itemInfo").eq(3).offset().top - windowHeight, "to": $(".itemInfo").eq(3).offset().top + $(".itemInfo").eq(3).height() - windowHeight}];
+                skillChartContentCSharpPos = { "from": $(".skillChartContentCSharp").offset().top - windowHeight, "to": $(".skillChartContentCSharp").offset().top + $(".skillChartContentCSharp").height() - windowHeight};
+                skillChartContentHtmlPos = { "from": $(".skillChartContentHtml").offset().top - windowHeight, "to": $(".skillChartContentHtml").offset().top + $(".skillChartContentHtml").height() - windowHeight};
+                skillChartContentVisualBasicPos = { "from": $(".skillChartContentVisualBasic").offset().top - windowHeight, "to": $(".skillChartContentVisualBasic").offset().top + $(".skillChartContentVisualBasic").height() - windowHeight};
+                skillChartContentJavascriptPos = { "from": $(".skillChartContentJavascript").offset().top - windowHeight, "to": $(".skillChartContentJavascript").offset().top + $(".skillChartContentJavascript").height() - windowHeight};
+                skillChartContentDatabasePos = { "from": $(".skillChartContentDatabase").offset().top - windowHeight, "to": $(".skillChartContentDatabase").offset().top + $(".skillChartContentDatabase").height() - windowHeight};
+                skillChartContentOfficePos = { "from": $(".skillChartContentOffice").offset().top - windowHeight, "to": $(".skillChartContentOffice").offset().top + $(".skillChartContentOffice").height() - windowHeight};
+                downloadPos = { "from": $(".download").offset().top, "to": $(".download").offset().top + $(".download").height()};
+                hirePos = { "from": $(".hire").offset().top, "to": $(".hire").offset().top + $(".hire").height()};
+                timelineCenterPos = { "from": $(".timelineCenter").offset().top  - windowHeight, "to": $(".timelineCenter").offset().top + $(".timelineCenter").height()  - windowHeight};
+                contactPos = { "from": $(".contact").offset().top  - windowHeight, "to": $(".contact").offset().top + $(".contact").height()  - windowHeight};
+                formContentPos = { "from": $(".formContent").offset().top  - windowHeight + $(".formContent").height() / 2, "to": $(".formContent").offset().top + $(".formContent").height()  - windowHeight};
+                workAnimationPos = { "from": $(".workAnimation").offset().top - windowHeight, "to": $(".workAnimation").offset().top + $(".workAnimation").height() - windowHeight};
+                projectAnimationPos = { "from": $(".projectAnimation").offset().top - windowHeight, "to": $(".projectAnimation").offset().top + $(".projectAnimation").height() - windowHeight};
+            });
+            $(window).scroll(function() {
+                var pos = $(this).scrollTop();
+
+                if (pos < aboutMePos.to && pos > aboutMePos.from) {
+                    $(".aboutText").css("animation", "slideRight .5s steps(100, end)");
+                } else if (pos < aboutMePos.from){
+                    $(".aboutText").css("animation", "");
+                }
+                if (pos > itemInfoPos[0].from) {
+                    $(".itemInfo").eq(0).css("animation", "slideRight .5s steps(100, end) forwards");
+                    abouTimeouts.push(setTimeout(function() { 
+                        $(".itemInfo").eq(1).css("animation", "slideRight .5s steps(100, end) forwards");
+                    }, 100));
+                    abouTimeouts.push(setTimeout(function() { 
+                        $(".itemInfo").eq(2).css("animation", "slideRight .5s steps(100, end) forwards");
+                    }, 200));
+                    abouTimeouts.push(setTimeout(function() { 
+                        $(".itemInfo").eq(3).css("animation", "slideRight .5s steps(100, end) forwards");
+                    }, 300));
+                } else if (pos < itemInfoPos[0].from){
+                    for (var i = 0; i < abouTimeouts.length; i++) {
+                        clearTimeout(abouTimeouts[i]);
+                    }
+                    abouTimeouts = [];
+                    $(".itemInfo").eq(0).css("animation", "");
+                    $(".itemInfo").eq(1).css("animation", "");
+                    $(".itemInfo").eq(2).css("animation", "");
+                    $(".itemInfo").eq(3).css("animation", "");
+                }
+                if (pos > skillChartContentCSharpPos.from) {
+                    $(".cSharp").css("animation", "cSharp .75s steps(100, end)");
+                } else if (pos < skillChartContentCSharpPos.from){
+                    $(".cSharp").css("animation", "");
+                }
+                if (pos > skillChartContentHtmlPos.from) {
+                    $(".html").css("animation", "html .75s steps(100, end)");
+                } else if (pos < skillChartContentHtmlPos.from){
+                    $(".html").css("animation", "");
+                }
+                if (pos > skillChartContentVisualBasicPos.from) {
+                    $(".visualBasic").css("animation", "visualBasic .75s steps(100, end)");
+                } else if (pos < skillChartContentVisualBasicPos.from){
+                    $(".visualBasic").css("animation", "");
+                }
+                if (pos > skillChartContentJavascriptPos.from) {
+                    $(".javascript").css("animation", "javascript .75s steps(100, end)");
+                } else if (pos < skillChartContentJavascriptPos.from){
+                    $(".javascript").css("animation", "");
+                }
+                if (pos > skillChartContentDatabasePos.from) {
+                    $(".database").css("animation", "database .75s steps(100, end)");
+                } else if (pos < skillChartContentDatabasePos.from){
+                    $(".database").css("animation", "");
+                }
+                if (pos > skillChartContentOfficePos.from) {
+                    $(".office").css("animation", "office .75s steps(100, end)");
+                } else if (pos < skillChartContentOfficePos.from){
+                    $(".office").css("animation", "");
+                }
+                if (pos > formContentPos.from) {
+                    $(".formContent").css("animation", "revealForm .75s steps(100, end)");
+                    $(".formContent").css("opacity", "1");
+                } 
+                if (pos > workAnimationPos.from) {
+                    $(".workAnimation").css("animation", "slideRight .5s steps(100, end)");
+                } else if (pos < workAnimationPos.from){
+                    $(".workAnimation").css("animation", "");
+                }
+                if (pos > projectAnimationPos.from) {
+                    $(".projectAnimation").css("animation", "slideRight .5s steps(100, end)");
+                } else if (pos < projectAnimationPos.from){
+                    $(".projectAnimation").css("animation", "");
+                }
+                if (pos > timelineCenterPos.from) {
+                    $(".timelineRoad").css("animation", "revealDown 2s steps(100, end)");
+                    $(".timelineLeft").eq(0).css("animation", "slideTimelineRight .75s steps(100, end) forwards");
+                    $(".timelineRight").eq(0).css("animation", "slideTimelineLeft .75s steps(100, end) forwards");
+                    timelineTimeouts.push(setTimeout(function() { 
+                        $(".timelineCenter").eq(0).css("animation", "revealFull .25s steps(100, end)");
+                        $(".timelineCenter").eq(0).css("opacity", "1");
+                        $(".timelineLeft").eq(1).css("animation", "slideTimelineRight .75s steps(100, end) forwards");
+                        $(".timelineRight").eq(1).css("animation", "slideTimelineLeft .75s steps(100, end) forwards");
+                    }, 100));
+                    timelineTimeouts.push(setTimeout(function() { 
+                        $(".timelineCenter").eq(1).css("animation", "revealFull .25s steps(100, end)");
+                        $(".timelineCenter").eq(1).css("opacity", "1");
+                        $(".timelineLeft").eq(2).css("animation", "slideTimelineRight .75s steps(100, end) forwards");
+                        $(".timelineRight").eq(2).css("animation", "slideTimelineLeft .75s steps(100, end) forwards");
+                    }, 600));
+                    timelineTimeouts.push(setTimeout(function() { 
+                        $(".timelineCenter").eq(2).css("animation", "revealFull .25s steps(100, end)");
+                        $(".timelineCenter").eq(2).css("opacity", "1");
+                        $(".timelineLeft").eq(3).css("animation", "slideTimelineRight .75s steps(100, end) forwards");
+                        $(".timelineRight").eq(3).css("animation", "slideTimelineLeft .75s steps(100, end) forwards");
+                    }, 1000));
+                    timelineTimeouts.push(setTimeout(function() { 
+                        $(".timelineCenter").eq(3).css("animation", "revealFull .25s steps(100, end)");
+                        $(".timelineCenter").eq(3).css("opacity", "1");
+                    }, 1400));
+                } else if (pos < timelineCenterPos.from){
+                    $(".timelineRoad").css("animation", "");
+                    $(".timelineCenter").eq(0).css("animation", "");
+                    $(".timelineCenter").eq(0).css("opacity", "0");
+                    $(".timelineCenter").eq(1).css("animation", "");
+                    $(".timelineCenter").eq(1).css("opacity", "0");
+                    $(".timelineCenter").eq(2).css("animation", "");
+                    $(".timelineCenter").eq(2).css("opacity", "0");
+                    $(".timelineCenter").eq(3).css("animation", "");
+                    $(".timelineCenter").eq(3).css("opacity", "0");
+                    $(".timelineLeft").eq(0).css("animation", "");
+                    $(".timelineRight").eq(0).css("animation", "");
+                    $(".timelineLeft").eq(1).css("animation", "");
+                    $(".timelineRight").eq(1).css("animation", "");
+                    $(".timelineLeft").eq(2).css("animation", "");
+                    $(".timelineRight").eq(2).css("animation", "");
+                    $(".timelineLeft").eq(3).css("animation", "");
+                    $(".timelineRight").eq(3).css("animation", "");
+                    for (var i = 0; i < timelineTimeouts.length; i++) {
+                        clearTimeout(timelineTimeouts[i]);
+                    }
+                    timelineTimeouts = [];
+                }
+                if (pos > skillsPos.from) {
+                    $(".skills").css("animation", "slideUp .5s steps(100, end)");
+                    $(".skills").eq(3).css("animation", "slideRight .5s steps(100, end)");
+                    
+                    timeouts.push(setTimeout(function() { 
+                    $(".marker").eq(0).addClass("checked").css("width", 0);
+                    }, 500));
+                    timeouts.push(setTimeout(function() { 
+                    $(".marker").eq(1).addClass("checked").css("width", 0);;
+                    }, 1000));
+                    timeouts.push(setTimeout(function() { 
+                    $(".marker").eq(2).addClass("checked").css("width", 0);;
+                    }, 1500));
+                    timeouts.push(setTimeout(function() { 
+                    $(".marker").eq(3).addClass("checked").css("width", 0);;
+                    }, 2000));
+                    timeouts.push(setTimeout(function() { 
+                    $(".marker").eq(4).addClass("checked").css("width", 0);;
+                    }, 2500));
+                    timeouts.push(setTimeout(function() { 
+                    $(".marker").eq(5).addClass("checked").css("width", 0);;
+                    }, 3000));
+                } else if (pos < skillsPos.from){
+                    for (var i = 0; i < timeouts.length; i++) {
+                        clearTimeout(timeouts[i]);
+                    }
+                    timeouts = [];
+                    $(".skills").css("animation", "");
+                    $(".marker").eq(0).removeClass("checked").css("width", "100%");
+                    $(".marker").eq(1).removeClass("checked").css("width", "100%");
+                    $(".marker").eq(2).removeClass("checked").css("width", "100%");
+                    $(".marker").eq(3).removeClass("checked").css("width", "100%");
+                    $(".marker").eq(4).removeClass("checked").css("width", "100%");
+                    $(".marker").eq(5).removeClass("checked").css("width", "100%");
+                }
+                if (lastPos > pos) { 
+                    if (pos < (formContentPos.from - $(".formContent").height() / 2)){
+                        $(".formContent").css("animation", "");
+                        $(".formContent").css("opacity", "0");
+                    }
+                    if (pos < downloadPos.to) { 
+                        $(".download").css("animation", "slideRight .5s steps(100, end)");
+                    } else if (pos > downloadPos.from){
+                        $(".download").css("animation", "");
+                    }
+                    if (pos < windowHeight) {
+                        $(".homeBackground").css("animation", "slideLeft 0.8s steps(100, end)")
+                    } else if (pos > windowHeight){
+                        $(".homeBackground").css("animation", "")
+                    }
+                    if (pos < hirePos.to) {
+                        $(".hire").css("animation", "slideRight .5s steps(100, end)");
+                    } else if (pos > hirePos.from){
+                        $(".hire").css("animation", "");
+                    }
+                }
+                if (!isClick) {
+                    if (pos >= windowHeight && pos < workExpAndEduPos.from) {
+                        selectMenu("about");
+                    } else if (pos < windowHeight) {
+                        selectMenu("home");
+                    } else if (pos >= workExpAndEduPos.from && pos < workExpAndEduPos.to) {
+                        selectMenu("work");
+                    } else if (pos >= projectPos.from && pos < projectPos.to) {
+                        selectMenu("project");
+                    } 
+                }
+                lastPos = pos;
+            });
+            $("#home").click(function(){
+                isClick = true;
+                for (var i = 0; i < timeouts.length; i++) {
+                    clearTimeout(timeouts[i]);
+                }
+                timeouts = [];
+                var body = $("html, body");
+                body.stop().animate({scrollTop:0}, 800, 'swing', function() { 
+                    isClick = false;
+                });
+                selectMenu("home");
+            });
+            $("#about").click(function(){
+                isClick = true;
+                var body = $("html, body");
+                body.stop().animate({scrollTop:windowHeight + 1}, 800, 'swing', function() { 
+                    isClick = false;
+                });
+                selectMenu("about");
+            });
+            $("#project").click(function(){
+                isClick = true;
+                var body = $("html, body");
+                body.stop().animate({scrollTop:projectPos.from + 1}, 800, 'swing', function() { 
+                    isClick = false;
+                });
+                selectMenu("project");
+            });
+            $("#work").click(function(){
+                isClick = true;
+                var body = $("html, body");
+                body.stop().animate({scrollTop:workExpAndEduPos.from + 1}, 800, 'swing', function() { 
+                    isClick = false;
+                });
+                selectMenu("work");
+            });
+            $("#switchButton").click(function(){
+                if (isDarkMode) {
+                    document.documentElement.style.setProperty("--backgroundColor", backgroundColorLight);
+                    document.documentElement.style.setProperty("--backgroundColorFrom", backgroundColorDark);
+                    document.documentElement.style.setProperty("--backgroundColorTo", backgroundColorLight);
+                    document.documentElement.style.setProperty("--themeColor2", themeColorPurple2Light);
+                    document.documentElement.style.setProperty("--textColor", textColorLight);
+                    $(".workExpAndEdu").css("background", "-webkit-linear-gradient(180deg, " + themeColorPurple + ", " + themeColorPurple2Light + "  80%)");
+                    isDarkMode = false;
+                } else {
+                    document.documentElement.style.setProperty("--backgroundColor", backgroundColorDark);
+                    document.documentElement.style.setProperty("--backgroundColorFrom", backgroundColorLight);
+                    document.documentElement.style.setProperty("--backgroundColorTo", backgroundColorDark);
+                    document.documentElement.style.setProperty("--themeColor2", themeColorPurple2Dark);
+                    document.documentElement.style.setProperty("--textColor", textColorDark);
+                    $(".workExpAndEdu").css("background", "-webkit-linear-gradient(180deg, " + themeColorPurple + ", " + themeColorPurple2Dark + " 80%)");
+                    isDarkMode = true;
+                }
+            });
+            $("#download").click(function(){
+                var link = document.createElement("a");
+                link.download = "Nguyen_Ngu_Bach_Nghiem_CV";
+                link.href = "/irene.jpg";
+                link.click();
+            });
+            $("#send").click(function(){
+                debugger;
+                sendEmail();
+            });
+        });
+        function selectMenu(str) {
+            switch(str) {
+                case "home":
+                    $(".textBorder").eq(1).removeClass("selected");
+                    $(".textBorder").eq(2).removeClass("selected");
+                    $(".textBorder").eq(3).removeClass("selected");
+                    $(".textBorder").eq(4).removeClass("selected");
+                    $(".textBorder").eq(0).addClass("selected");
+                    $(".title").eq(1).removeClass("textSelected");
+                    $(".title").eq(2).removeClass("textSelected");
+                    $(".title").eq(3).removeClass("textSelected");
+                    $(".title").eq(4).removeClass("textSelected");
+                    $(".title").eq(0).addClass("textSelected");
+                    break;
+                case "about":
+                    $(".textBorder").eq(0).removeClass("selected");
+                    $(".textBorder").eq(2).removeClass("selected");
+                    $(".textBorder").eq(3).removeClass("selected");
+                    $(".textBorder").eq(4).removeClass("selected");
+                    $(".textBorder").eq(1).addClass("selected");
+                    $(".title").eq(0).removeClass("textSelected");
+                    $(".title").eq(2).removeClass("textSelected");
+                    $(".title").eq(3).removeClass("textSelected");
+                    $(".title").eq(4).removeClass("textSelected");
+                    $(".title").eq(1).addClass("textSelected");
+                    break;
+                case "work":
+                    $(".textBorder").eq(1).removeClass("selected");
+                    $(".textBorder").eq(3).removeClass("selected");
+                    $(".textBorder").eq(0).removeClass("selected");
+                    $(".textBorder").eq(4).removeClass("selected");
+                    $(".textBorder").eq(2).addClass("selected");
+                    $(".title").eq(1).removeClass("textSelected");
+                    $(".title").eq(3).removeClass("textSelected");
+                    $(".title").eq(0).removeClass("textSelected");
+                    $(".title").eq(4).removeClass("textSelected");
+                    $(".title").eq(2).addClass("textSelected");
+                    break;
+                case "project":
+                    $(".textBorder").eq(1).removeClass("selected");
+                    $(".textBorder").eq(2).removeClass("selected");
+                    $(".textBorder").eq(0).removeClass("selected");
+                    $(".textBorder").eq(4).removeClass("selected");
+                    $(".textBorder").eq(3).addClass("selected");
+                    $(".title").eq(1).removeClass("textSelected");
+                    $(".title").eq(2).removeClass("textSelected");
+                    $(".title").eq(0).removeClass("textSelected");
+                    $(".title").eq(4).removeClass("textSelected");
+                    $(".title").eq(3).addClass("textSelected");
+                    break;
+            }
+        }
+        function runAllAnimation() {
+            $(".timelineRoad").css("animation", "revealDown 2s steps(100, end)");
+            $(".timelineLeft").eq(0).css("animation", "slideTimelineRight .75s steps(100, end) forwards");
+            $(".timelineRight").eq(0).css("animation", "slideTimelineLeft .75s steps(100, end) forwards");
+            timelineTimeouts.push(setTimeout(function() { 
+                $(".timelineCenter").eq(0).css("animation", "revealFull .25s steps(100, end)");
+                $(".timelineCenter").eq(0).css("opacity", "1");
+                $(".timelineLeft").eq(1).css("animation", "slideTimelineRight .75s steps(100, end) forwards");
+                $(".timelineRight").eq(1).css("animation", "slideTimelineLeft .75s steps(100, end) forwards");
+            }, 100));
+            timelineTimeouts.push(setTimeout(function() { 
+                $(".timelineCenter").eq(1).css("animation", "revealFull .25s steps(100, end)");
+                $(".timelineCenter").eq(1).css("opacity", "1");
+                $(".timelineLeft").eq(2).css("animation", "slideTimelineRight .75s steps(100, end) forwards");
+                $(".timelineRight").eq(2).css("animation", "slideTimelineLeft .75s steps(100, end) forwards");
+            }, 600));
+            timelineTimeouts.push(setTimeout(function() { 
+                $(".timelineCenter").eq(2).css("animation", "revealFull .25s steps(100, end)");
+                $(".timelineCenter").eq(2).css("opacity", "1");
+                $(".timelineLeft").eq(3).css("animation", "slideTimelineRight .75s steps(100, end) forwards");
+                $(".timelineRight").eq(3).css("animation", "slideTimelineLeft .75s steps(100, end) forwards");
+            }, 1000));
+            timelineTimeouts.push(setTimeout(function() { 
+                $(".timelineCenter").eq(3).css("animation", "revealFull .25s steps(100, end)");
+                $(".timelineCenter").eq(3).css("opacity", "1");
+            }, 1400));
+            $(".download").css("animation", "slideRight .5s steps(100, end)");
+            $(".hire").css("animation", "slideRight .5s steps(100, end)");
+            $(".homeBackground").css("animation", "slideLeft 0.8s steps(100, end)");
+            $(".marker").eq(0).addClass("checked").css("width", 0);
+            $(".marker").eq(1).addClass("checked").css("width", 0);
+            $(".marker").eq(2).addClass("checked").css("width", 0);
+            $(".marker").eq(3).addClass("checked").css("width", 0);
+            $(".marker").eq(4).addClass("checked").css("width", 0);
+            $(".marker").eq(5).addClass("checked").css("width", 0);
+            $(".cSharp").css("animation", "cSharp .75s steps(100, end)");
+            $(".html").css("animation", "html .75s steps(100, end)");
+            $(".visualBasic").css("animation", "visualBasic .75s steps(100, end)");
+            $(".javascript").css("animation", "javascript .75s steps(100, end)");
+            $(".database").css("animation", "database .75s steps(100, end)");
+            $(".office").css("animation", "office .75s steps(100, end)");
+            $(".itemInfo").eq(0).css("animation", "slideRight .5s steps(100, end) forwards");
+            abouTimeouts.push(setTimeout(function() { 
+                $(".itemInfo").eq(1).css("animation", "slideRight .5s steps(100, end) forwards");
+            }, 100));
+            abouTimeouts.push(setTimeout(function() { 
+                $(".itemInfo").eq(2).css("animation", "slideRight .5s steps(100, end) forwards");
+            }, 200));
+            abouTimeouts.push(setTimeout(function() { 
+                $(".itemInfo").eq(3).css("animation", "slideRight .5s steps(100, end) forwards");
+            }, 300));
+        }
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "nbachnghiem97@gmail.com",
+                Password: "kedamsaulung1981",
+                To: 'nbachnghiem10101997@gmail.com',
+                From: "nbachnghiem97@gmail.com",
+                Subject: "Sending Email using javascript",
+                Body: "Well that was easy!!",
+            })
+                .then(function (message) {
+                alert("mail sent successfully")
+                });
+        }
+    const swiper = new Swiper(".swiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        grabCursor: true,
+        centeredSlides: false,
+        slideActiveClass: "active",
+        autoplay: {
+            enabled: true,
+            delay: 2000
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1
+          },
+          // when window width is >= 480px
+          720: {
+            slidesPerView: 2
+          },
+        }
+    });
+    </script>
+</body>
+</html>
